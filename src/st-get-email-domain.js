@@ -11,12 +11,7 @@ import { NotImplementedError } from '../extensions/index.js';
  *
  */
 export default function getEmailDomain(/* email */) {
-  throw new NotImplementedError('Not implemented');
-  // remove line with error and write your code here
-}
 
-
-function getEmailDomain(str) {
   let result = '';
   let i;
   for (i = 0; i < str.length; i++) {
@@ -24,6 +19,8 @@ function getEmailDomain(str) {
       result = str.slice(i + 1);
     }
   }
-  return result;
-  // console.log(result);
+  //  return `'${result}'`;
+  console.log(`'${result}'`);
+
 }
+
